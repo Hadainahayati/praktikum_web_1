@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <style>
+      
+      .container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .row2, .row3{
+        display: flex;
+        gap: 8px;
+      }
+
+      .row2-yellow{
+        background-color: yellow;
+        flex-grow: 0.3;
+        height: 100px;
+      }
+
+      .row2-orange {
+        background-color: rgb(156, 123, 62);
+        flex-grow: 3;
+        height: 100px;
+      }
+
+      .row3-yellow{
+        background-color: rgb(17, 0, 255);
+        flex-grow: 0.11;
+        height: 400px;
+      }
+
+      .row3-blue {
+        background-color: aqua;
+        flex-grow: 0.9;
+        height: 400px;
+      }
+
+      .row3-5 {
+        background-color: rgb(255, 115, 0);
+        flex-grow: 0.1;
+        height: 400px;
+      }
+      .row4{
+        margin-top: 7px;
+      }
+      .row4-6 {
+        background-color: rgb(22, 195, 85);
+        flex-grow: 0.7;
+        height: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--baris 1-->
+    <div class="container">
+      <!--baris 2-->
+      <div class="row2">
+        <div class="row2-yellow">box 1</div>
+        <div class="row2-orange">box 2</div>
+      </div>
+      <!--baris 3-->
+      <div class="row3">
+        <div class="row3-yellow">box 3</div>
+        <div class="row3-blue">box 4</div>
+        <div class="row3-5">box 5</div>
+      </div>
+    </div>
+    <footer class="row4">
+           <div>
+            <div class="row4-6">box 6</div>
+          </div>
+     </footer>
+  </body>
+</html>                                               <!--SEMANGAT YA-->
