@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kegiatan</title>
+    <style>
+    
+    .container{
+        float: right;
+        margin-right: 760px;
+    }    
+
+    .m{
+        display: flex;        
+         justify-content: space-between;
+         float: right;
+         margin-left: 70px;
+         
+     }    
+
+    .kotak-3{
+        width: 20%;
+        margin-right: 26px;
+        border: 1px solid black;
+        padding: 2px;
+
+    }
+
+        .kotak-4{
+            margin-right: 45px;
+            border: 1px solid black;
+        
+}
+
+.kotak-5{
+    margin-right: 45px;
+    text-align: center;
+    
+
+}
+
+.text{
+    display: flex;
+}
+.p1,.p,.p3{
+    flex: 1;
+
+}
+
+.p1{
+    margin-right: 100px;
+}
+
+.p3{
+    margin-left: 70px;
+}
+
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Kegiatan</legend>
+        <div class="text">
+        <div class="p">
+            <p>Tanggal Daftar :</p>
+        </div>
+
+        <div class="p1">
+            <p> Kategori dan status Peserta :</p>
+        </div>
+
+        <div class="p3">
+           
+        </div>
+
+    </div>
+
+        <div class="container">
+            <!--input DROPDOWN -->
+        <label class="kotak-5" for="Payment"></label>
+        <select name="Payment" id="Payment">
+           <option value="COD">Booking</option>
+           
+           </select>
+        </div>
+
+        <div class="m">
+            <!--input DROPDOWN -->
+        <label class="kotak-5" for="Payment"></label>
+        <select name="Payment" id="Payment">
+           <option value="COD">Mahasiswa</option>
+           </select>
+        </div>
+      
+  
+      <!--input TAHUN -->
+      <label class="kotak-3" for="Pemeriksaan">From</label>
+      <input type="date" id="nama" name="nama" />
+      <br/><br />
+
+        <!--input TAHUN -->
+        <label class="kotak-4" for="Pemeriksaan">To</label>
+        <input type="date" id="nama" name="nama" />
+        <br/><br />
+   
+  
+
+    </fieldset>
+</body>
+</html>
