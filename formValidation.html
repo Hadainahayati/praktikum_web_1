@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Login</title>
+    <style>
+        form{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center"> FORM LOGIN</h1>
+    <form onsubmit="submitdata(); return false;">
+    <!--INPUT USERNAME-->
+    <label for="username">Masukan Username</label>
+    <input type="text" id="Username"/>
+    <br/>
+    <br/>
+    <!--INPUT PASSWORD-->
+    <label for="password">Masukan Password</label>
+    <input type="password" id="Password"/>
+    <br/>
+    <br/>
+    <!--INPUT GMAIL-->
+    <label for="gmail">Masukan Email</label>
+    <input type="email" id="Gmail"/>
+    <br/>
+    <br/>
+    <!--INPUT WAKTU-->
+    <label for="time">Waktu pemberangkatan</label>
+    <input type="time" id="Time"/>
+    <br/>
+    <br/>
+    <!--INPUT KEBERANGKATAN-->
+    <label for="username">Masukan Kota Tujuan</label>
+    <input type="text" id="Keberangkatan"/>
+    <br/>
+    <br/>
+    <button onclick="submitdata()">Submit</button>
+    </form>
+    <script>
+        function submitdata() {
+            let username        = document.getElementById("username").value;
+            let password        = document.getElementById("password").value;
+            let gmail           = document.getElementById("Gmail").value;
+            let time            = document.getElementById("time").value;
+            let Keberangkatan   = document.getElementById("keberangkatan").value;
+
+            // Validasi Formulir
+            if (username === "Hadaina" && password === "12345" && gmail === "Hadainahayati@gmail.com" && time === "16.35" &&  Keberangkatan === "Jawa") {
+                alert( "Nama :" + username +  "\n password : " + password + "\n email : " + gmail + "\n Waktu : " + time + "\n Keberangkatan : " + Keberangkatan);
+            } else{
+                //CEK  PASSWORD
+                let errorMessage = " PASTIKAN ANDA MEMASUKAN DATA YANG VALIDASI ";
+                if (username !== "Hadaina") {
+                    errorMessage += "\n Username : yang anda masukan salah";
+                }
+                if (password !== "12345") {
+                    errorMessage += "\n Password : yang anda masukan salah";
+                }
+                if (gmail !== "Hadainahayati@gmail.com") {
+                    errorMessage += "\n Gmail : yang anda masukan salah";
+                }
+                if (time !== "16.35") {
+                    errorMessage += "\n Waktu : yang anda masukan salah";
+                }
+                if (Keberangkatan !== "Jawa") {
+                    errorMessage += "\n Tempat : yang anda masukan salah";
+                }
+                alert(errorMessage);
+            }
+        }
+    </script>
+</body>
+</html>
